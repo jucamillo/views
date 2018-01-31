@@ -11,8 +11,8 @@
         <h1>Cursos</h1>
         <ul class="list-group">
           @foreach ($cursos as $curso)
-            <li>
-              {{$curso}}
+            <li class="list-group-item">
+              <li class="list-group-item"><a href="/cursos/{{ $loop->index }}">{{ $curso }}</a></li>
             </li>
           @endforeach
         </ul>
