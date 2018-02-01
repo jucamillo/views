@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Cursos</title>
-    <link rel="stylesheet" href="/css/app.css">
-  </head>
-  <body>
-    <div class="container">
+@extends('layouts.master')
 
+@section('title', 'Listagem dos Cursos')
+
+@section('conteudo')
         <h1>Cursos</h1>
         <ul class="list-group">
           @foreach ($cursos as $curso)
@@ -16,7 +11,4 @@
             </li>
           @endforeach
         </ul>
-    </div>
-    <script type="text/javascript" src="/js/app.js">
-  </body>
-</html>
+@endsection
